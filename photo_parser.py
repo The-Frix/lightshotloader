@@ -39,7 +39,7 @@ while inums < nums:
 
 		file.write(img.content)
 		inums += 1
-	except requests.exceptions.MissingSchema as e:
+	except requests.exceptions.MissingSchema:
 		print("err")
-	except IndexError as e:
+	except IndexError:
 		print("not found")
